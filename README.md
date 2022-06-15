@@ -14,3 +14,7 @@ This repo shows a basic Webpack setup for using Leaflet with Typescript.
 * Install NodeJs Packages via `npm install`
 * run application via `npm run dev` 
 * in the opened browser tab, click on "src"
+
+### Using leaflet js plugin in typescript:
+* [guide](https://stackoverflow.com/questions/44472856/how-do-i-add-typescript-definitions-for-leaflet-plugins)
+* [Leaflet.ScgShapeMarkers plugin](https://github.com/rowanwins/Leaflet.SvgShapeMarkers/blob/gh-pages/dist/leaflet-svg-shape-markers.js)

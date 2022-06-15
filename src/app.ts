@@ -1,4 +1,5 @@
 import * as L from 'leaflet';
+import './leaflet-svg-shape-markers';
 
 delete (<any>L.Icon.Default.prototype)._getIconUrl;
 
@@ -14,6 +15,17 @@ window.onload = () => {
 	console.log('onload');
 
 	let map = L.map('map').setView([51.505, -0.09], 13);
+	let square = L.shapeMarker([51.505, -0.09], {
+		shape: "square",
+		radius: 20
+	}).addTo(map);
+
+	var diamond = L.shapeMarker([51.505, -0.09], {
+		fillColor: "#cccccc",
+		color: "black",
+		shape: "diamond",
+		radius: 200
+	}).addTo(map);
 
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
