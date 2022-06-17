@@ -13,7 +13,7 @@ declare module 'leaflet' {
 
 		initialize(latlng: L.LatLngExpression, options: ShapeMarkerOptions);
 		setLatLng(latlng: L.LatLngExpression): L.Evented;
-		getLatLang(): L.LatLngExpression;
+		getLatLng(): L.LatLngExpression;
 		setRadius(radius: number): ShapeMarker;
 		getRadius(): number;
 		setStyle(style: ShapeMarkerOptions);
